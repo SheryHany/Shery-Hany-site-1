@@ -1,0 +1,120 @@
+.btn{
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 300;
+
+    &--rectangle1{
+        border: 3px solid $black-color;
+
+    }
+    &--rectangle2{
+        border: 2px solid $secondry-gray-color;    
+    }
+    &--padding-rectangle1{
+        @include change-padding($padding-top-bottom1, $padding-right-left1);
+    }
+    &--padding-rectangle2{
+        @include change-padding($padding-top-bottom2, $padding-right-left2);
+    }
+   
+    &--primary{
+        margin-top: 28px;
+        width: 38%;
+        height: 22px;
+        @include color-with-hover-effect(none, $secondry-gray-color);
+        &:hover{
+            transition: all 0.8s;
+            @include color-with-hover-effect($primary-color, $white-color);
+            border: none;
+        }
+    }
+    &--secondry{
+        @include color-with-hover-effect($white-color, $secondry-gray-color);
+        &:hover{
+            @include color-with-hover-effect($primary-color, $white-color);
+            border: none;
+            }
+    }
+}
+
+.circle
+{
+    margin-top: 343px;
+    margin-left: 19px;
+    @include circle-hover-image-text;
+    &:hover
+    {
+        width: 130px;
+        .text-right-circle{
+            opacity: 1;
+        }
+        .circle__right{
+        opacity: 0.7;
+        }
+
+    }
+
+    &__right{      
+        @include circle-with-arrow;
+        opacity: 1;
+    }
+       
+}
+.reverse-circle{
+    margin-top: -70px;
+    margin-left: 1219px;;
+    position: relative;
+    transition: all 0.3s;
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+    background-image: url("http://warethemes.com/wordpress/xuper/wp-content/uploads/2018/06/slider-10-100x50.jpg");
+    background-size: cover;
+    background-position: right;
+
+    
+    &:hover //~&__left:hover
+    {
+        width: 130px;
+        .reverse-circle__left{
+            opacity: 0.7;
+        }
+        .text-left-circle{
+            opacity: 1;
+        }
+    }
+    &__left{
+        background-color: $dark-gray-color;
+        width: 70px;
+        height: 70px;
+        border-radius: 35px;
+        display: inline-block;
+        position: absolute;            
+        transition: all 0.3s;
+        right: 0;
+        // &:hover
+        // {
+        //     opacity: 0.5;
+        // }
+    }
+}
+.arrow{
+    margin-top: 27px;
+    color: $white-color;
+    margin-left: 30px;
+}
+
+.text-right-circle{
+    opacity: 0;
+    color:  $white-color;
+    padding-left: $padding-left-for-text-right-circle;
+    margin-top: $margin-top-for-text-right-circle;
+    font-weight: $font-weight-for-circle-text;  
+}
+.text-left-circle{
+    opacity: 0;
+    color:  $white-color;
+    margin-left: $margin-left-for-text-left-circle;
+    margin-top: $margin-top-for-text-left-circle;
+    font-weight: $font-weight-for-circle-text;  
+}

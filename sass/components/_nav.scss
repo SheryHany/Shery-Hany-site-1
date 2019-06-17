@@ -1,0 +1,35 @@
+.nav{
+    width: 47%;
+    &__item{
+        display: inline-block;
+        position: relative;
+
+        &__sub{
+            //display: none;
+            position: absolute;
+            top: 50px;
+            opacity: 0;
+            transition: all 0.25s;
+            text-align: -webkit-left;
+        }
+
+        &:hover{
+            .nav__item__sub{
+                //display: block;
+                opacity: 1;
+                top: 30px;
+                width: 250px;
+                background-color: $white-color;
+                margin-left: 26px;
+            }           
+        }
+        .nav__item__sub--item-style{
+            height: 34px;
+            padding-top: 11px;
+            border-bottom: 1px solid $gray-color9;
+            &:last-child{
+            border-bottom: none;
+            }
+        }
+    }
+}

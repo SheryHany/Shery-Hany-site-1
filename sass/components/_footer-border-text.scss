@@ -1,0 +1,180 @@
+.text-border
+{
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: $black-color;
+    //position: absolute;
+
+    &--active-for-company-card-list
+    {
+        &::before
+            {
+               @include bottom-border($gray-color , 1.7rem);
+              
+               @include position-of-bottom-border-of-titles(80%, 38px);
+            }           
+    }
+    &--bottom-border
+    {
+        position: relative;
+        &:hover
+        {
+            &::before
+            {
+                @include bottom-border($gray-color , 1.7rem);
+               
+               @include position-of-bottom-border-of-titles(80%, 38px);
+            } 
+        }
+        
+    }
+    
+}
+
+.text-border-title-sec3
+{
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: $black-color;
+    //position: absolute;
+
+    &--active-for-company-card-list-sec3
+    {
+        &::before
+            {
+               @include bottom-border($gray-color , 1.7rem);
+              
+               @include position-of-bottom-border-of-titles(74%, 53px);
+            }           
+    }
+    &--bottom-border-sec3
+    {
+        position: relative;
+        &:hover
+        {
+            &::before
+            {
+                @include bottom-border($gray-color , 1.7rem);
+               
+               @include position-of-bottom-border-of-titles(74%, 53px);
+            } 
+        }
+        
+    }
+    
+}
+.text-border-title-sec5
+{
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: $black-color;
+    //position: absolute;
+
+    &--active-for-company-card-list-sec5
+    {
+        &::before
+            {
+               @include bottom-border($gray-color , 1.7rem);
+              
+               @include position-of-bottom-border-of-titles(80%, 40px);
+            }           
+    }
+    &--bottom-border-sec5
+    {
+        position: relative;
+        &:hover
+        {
+            &::before
+            {
+                @include bottom-border($gray-color , 1.7rem);
+               
+               @include position-of-bottom-border-of-titles(80%, 40px);
+            } 
+        }
+        
+    }
+    
+}
+
+.text-border-title-sec6
+{
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: $black-color;
+    //position: absolute;
+
+    &--active-for-company-card-list-sec6
+    {
+        &::before
+            {
+               @include bottom-border($gray-color , 1.7rem);
+              
+               @include position-of-bottom-border-of-titles(45%, 120px);
+            }           
+    }
+    &--bottom-border-sec6
+    {
+        position: relative;
+        margin-left: -25px;
+        &:hover
+        {
+            &::before
+            {
+                @include bottom-border($gray-color , 1.7rem);
+               
+               @include position-of-bottom-border-of-titles(45%, 120px);
+            } 
+        }
+        
+    }
+    
+}
+
+.text-border-title-sec8
+{
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: $black-color;
+    //position: absolute;
+
+    &--active-for-company-card-list-sec8
+    {
+        &::before
+            {
+               @include bottom-border($gray-color , 1.7rem);
+              
+               @include position-of-bottom-border-of-titles(90%, 8px);
+               margin-top: 1px;
+            }           
+    }
+    &--bottom-border-sec8
+    {
+        position: relative;
+        margin-left: -25px;
+        &:hover
+        {
+            &::before
+            {
+                @include bottom-border($gray-color , 1.7rem);
+               
+               @include position-of-bottom-border-of-titles(90%, 8px);
+               margin-top: 1px;
+
+            } 
+        }
+        
+    }
+    
+}
+
+
+.style-for-link-text{
+        padding: 10px;
+        text-transform: uppercase;
+        color: $gray-color11;
+}

@@ -1,0 +1,52 @@
+@mixin color-with-hover-effect($back-color, $fore-color) {
+    background-color: $back-color;
+    color: $fore-color;
+}
+@mixin change-padding($top-bottom, $right-left) {
+    padding-top: $top-bottom;
+    padding-bottom: $top-bottom;
+    padding-right: $right-left;
+    padding-left: $right-left;
+}
+@mixin bottom-border($bg-color , $height-border) {
+    content: '';
+    background-color: $bg-color;
+    height: $height-border;                       //    height: 1.7rem;
+    width: 100%;
+    position: absolute;
+    top:2.2rem;
+    left:0;
+    z-index: -1;
+}
+@mixin circle-with-arrow {
+        background-color: $dark-gray-color;
+        width: 70px;
+        height: 70px;
+        border-radius: 35px;
+        //display: inline-block;
+        position: absolute;            
+        transition: all 0.3s;
+}
+@mixin circle-hover-image-text {
+    position: relative;
+    transition: all 0.3s;
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+    background-image: url("http://warethemes.com/wordpress/xuper/wp-content/uploads/2018/06/slider-10-100x50.jpg");
+    background-size: cover;
+    background-position: right;
+}
+@mixin company-card-text($margin-top-text, $margin-left-text) {
+            color: $gray-color11;
+            margin-left: $margin-left-text;
+            font-size: 14px;
+            margin-top: $margin-top-text;
+    
+}
+ @mixin position-of-bottom-border-of-titles($border-width, $margin-left-border) {
+        margin-top: 12px;
+        height: 1.9rem;
+        width: $border-width;
+        margin-left: $margin-left-border;
+}

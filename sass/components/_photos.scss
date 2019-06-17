@@ -1,0 +1,42 @@
+.photos{
+    display: flex;
+    flex-direction: row;
+
+    position: relative;
+    &__left{
+        &--design{
+            width: 675px;
+            height: 382px;
+        }      
+    }
+
+    &__right{
+        display: flex;
+        flex-direction: row;
+        &__row1{
+            &--design-small-top-photo1{
+                width: 336px;
+                height: 191px;
+            }
+            &--design-small-top-photo2{
+                width: 336px;
+                height: 192px;
+                margin-top: -8px;
+            }
+
+        }
+        &__row2{
+            &--design-small-bottom-photo1{
+                width: 338px;
+                height: 191px;
+            }
+            &--design-small-bottom-photo2{
+                width: 338px;
+                height: 192px;
+                margin-top: -8px;
+
+            }
+        }
+
+    }
+}

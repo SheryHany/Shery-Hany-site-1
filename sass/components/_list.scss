@@ -1,0 +1,68 @@
+//test for hidden list
+// .test{
+//     width: 151px;
+//     height: 238px;
+//     text-align: center;
+//     background-color: red;
+//     position: absolute;
+//     &:hover{
+//         .icons-list__list{
+//         //.icons-list{
+//             visibility: visible;
+//         }
+//     }
+// }
+
+.icons-list{
+    
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: -250px;
+    margin-left: 240px;
+    transition: transform .8s;
+
+    &__list{
+        width: 60px;
+        height: 190px;
+        display: flex;
+        flex-direction: column;
+        visibility: hidden;
+        position: relative;
+        bottom: 0;
+        right: 0;
+        
+        &--design{
+            height: 55px;
+            padding-top: 17px;
+            background-color: $secondry-gray-color;
+
+            border-bottom: 1px solid $white-color;
+            &:hover{
+                background-color: $primary-color;
+                .icons{
+                    color: $secondry-gray-color;
+                }
+            }
+            &:nth-child(1) {
+                transform: translateX(111%);
+                transition-delay: 0.2s;
+
+            }
+            &:nth-child(2) {
+                transform: translateX(112%);
+                transition-delay: 0.3s;
+
+            }
+            &:nth-child(3) {
+                transform: translateX(113%);
+                transition-delay: 0.4s;
+
+            }
+        }
+    }
+}
+
+.icons{
+    color: $white-color;
+}

@@ -1,0 +1,23 @@
+.search
+{
+    padding-left: 695px;
+    width: 20px;
+    height: 20px;
+    margin-top: -31px;
+    margin-left: 395px;
+}
+.box
+{
+   background-color: $light-gray-color;
+   width: 190px;
+   height: 40px;
+   border: none;
+   border-radius: 40px;
+   font-size: 14px;
+   &::placeholder {
+    padding-left: 15px;
+    color: $dark-light-gray-color;
+
+    }
+
+}

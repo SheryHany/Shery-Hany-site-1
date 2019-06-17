@@ -1,0 +1,109 @@
+.website{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    .section1{
+
+        width: 100%;
+        height: 868px;
+
+        &__img-bg{
+            width: 100%;
+            height: 868px;
+        }
+        &__header{
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            z-index: 0;
+            margin-top: -886px;
+
+            &__img-logo{
+                margin-left: 21px;
+                margin-top: 45px;
+            }
+            &__minue-list{
+                margin-left: 374px;
+                margin-top: -33px;
+
+            }
+            &__brand-name{
+                display: flex;
+                flex-direction: column;
+                width: 29%;
+                height: 252px;
+                margin-top: -121px;
+                margin-left: 215px;
+                text-align: -webkit-left;
+
+                &--def{
+                    font-size: 20px;
+                    color: $secondry-gray-color;
+                }
+                &--the-brand{
+                    color: $secondry-gray-color;
+                    font-size: 47px;
+                }
+                &--conclusion{
+                    color: $gray-color6;
+                    font-size: 20px;
+                }
+            }
+        }
+
+    }
+    .title-section3{
+        height: 50px;
+        width:  31%;
+        margin-left: 483px;
+        margin-top: 38px;
+        &--style-font-title{
+            font-size: 34px;
+            font-weight: bold;
+            color: $secondry-gray-color;
+        }
+        &--style-font-desc{
+            font-size: 14px;
+            margin-top: -9px;
+        }
+
+    }
+    .section3{
+        display: flex;
+        flex-direction: column;
+        height: 779;
+        width: 100%;
+        margin-top: 73px;
+
+        &__first-row{
+            display: flex;
+            flex-direction: row;
+        }
+
+        &__second-row{
+            margin-top: 30px;
+            display: flex;
+            flex-direction: row;
+        }
+    }
+    .section4{
+        margin-top: 73px;
+    }
+
+   
+    .section5{
+        margin-top: 61px;
+        display: flex;
+        flex-direction: row;
+
+    }
+    .section6{
+        margin-top: 61px;
+        display: flex;
+        flex-direction: row;
+    }
+    .section7{
+        margin-top: 45px;
+    }
+}
